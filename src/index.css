@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+/* ===================================
+   GLOBAL BASE
+=================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  background: #ffffff;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ===================================
+   OVERLAY ANIMATIONS
+=================================== */
+@keyframes backdropIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes panelIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes panelOut {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.98) translateY(8px);
+  }
+}
+
+/* ===================================
+   SECTION FADE IN
+=================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+/* ===================================
+   HERO GRID PATTERN
+=================================== */
+.hero-grid {
+  background-image:
+    linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* ===================================
+   SCROLLBAR (Overlay Panel)
+=================================== */
+.overlay-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.overlay-panel::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.overlay-panel::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+/* ===================================
+   SELECTION
+=================================== */
+::selection {
+  background: #FFCC00;
+  color: #000;
+}
+
+/* ===================================
+   LINE CLAMP
+=================================== */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ===================================
+   GRID VISIBLE LINES
+=================================== */
+.brutalist-grid-line {
+  border: 3px solid #000;
+}
+
+/* ===================================
+   ANIMATE PULSE (Status dot)
+=================================== */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.animate-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
