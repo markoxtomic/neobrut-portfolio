@@ -40,35 +40,18 @@ export function Footer({ onNavigate }: FooterProps) {
             </div>
           </div>
 
-          {/* Status + Social */}
+          {/* Status */}
           <div className="md:pl-10">
             <div className="text-xs font-mono font-bold uppercase tracking-widest text-gray-500 mb-5">Status</div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-2 h-2 bg-[#FFCC00] rounded-full animate-pulse" />
-              <span className="text-sm font-medium">Available for advisory</span>
-            </div>
-            <div className="text-xs font-mono font-bold uppercase tracking-widest text-gray-500 mb-4">Connect</div>
-            <div className="flex gap-3">
-              {["LI", "TW", "GH"].map((social) => (
-                <div
-                  key={social}
-                  className="w-9 h-9 flex items-center justify-center font-mono font-bold text-xs cursor-pointer"
-                  style={{
-                    border: "2px solid #333",
-                    transition: "all 0.15s ease",
-                  }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.background = "#FFCC00";
-                    (e.currentTarget as HTMLElement).style.color = "#000";
-                    (e.currentTarget as HTMLElement).style.borderColor = "#FFCC00";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.background = "transparent";
-                    (e.currentTarget as HTMLElement).style.color = "#fff";
-                    (e.currentTarget as HTMLElement).style.borderColor = "#333";
-                  }}
-                >
-                  {social}
+            <div className="space-y-4">
+              {[
+                "Available for consultancy",
+                "Technical implementations",
+                "Strategic leadership roles",
+              ].map((status, i) => (
+                <div key={i} className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-[#FFCC00] rounded-full animate-pulse" />
+                  <span className="text-sm font-medium text-gray-300">{status}</span>
                 </div>
               ))}
             </div>

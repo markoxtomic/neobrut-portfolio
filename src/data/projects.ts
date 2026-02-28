@@ -45,6 +45,7 @@ export interface Project {
     outcomes: KPI[];
     strategicImpact: string;
   };
+  links?: { label: string; url: string }[];
 }
 
 export const projects: Project[] = [
@@ -124,6 +125,141 @@ export const projects: Project[] = [
     },
   },
   {
+    id: "digital-team-leadership",
+    title: "STRATEGIC LEADERSHIP & DIGITAL TALENT TRANSFORMATION",
+    category: "Leadership & Operations",
+    summary:
+      "Initially operating as a single-person dependency, I successfully transitioned into a leadership role to architect and scale a high-performance digital function from the ground up.",
+    kpis: [
+      { label: "Team Built", value: "4 Specialists" },
+      { label: "Revenue Growth", value: "+18%" },
+      { label: "Time to Output", value: "90 Days" },
+      { label: "SOPs Documented", value: "47" },
+    ],
+    techStack: ["Internal Knowledge Base (HTML)", "Microsoft Teams", "Local/Private LLMs", "Financial Strategy Tools"],
+    featured: true,
+    type: "WORK",
+    caseStudy: {
+      executiveSummary:
+        "Initially operating as a single-person dependency for all strategic digital initiatives, I successfully transitioned into a leadership role to architect and scale a high-performance digital function. By building a four-specialist team from the ground up, I eliminated key-person dependencies and shifted my focus to high-level financial strategy and global orchestration. I have successfully infused a 'continuous learning' culture into an established organization, implementing EU AI Act-compliant workflows that have measurably increased productivity and contributed to an 18% net revenue growth.",
+      businessContext: [
+        { label: "Industry", value: "Digital Commerce" },
+        { label: "Company Stage", value: "Growth – transitioning from a single-person digital dependency to a scalable team structure" },
+        { label: "Core Challenge", value: "Lack of documented systems and scalability; high-key person risk on all digital operations" },
+        { label: "Opportunity", value: "Build a lean, high-output team capable of executing complex growth initiatives under rigid budget constraints" },
+      ],
+      strategicPhases: [
+        {
+          title: "Diagnosis & Gap Analysis",
+          content: "Conducted a capability gap analysis to define role architectures for paid media, email/retention, content, and analytics, ensuring alignment with long-term growth targets.",
+        },
+        {
+          title: "The Knowledge Suite",
+          content: "Built a custom internal suite for guidance, providing new hires with a digital knowledge base. This functions as a course catalog and real-time learning material to ensure procedural consistency.",
+        },
+        {
+          title: "Talent Acquisition & Mentorship",
+          content: "Led the end-to-end hiring and onboarding process for 4 specialists, including the direct recruitment and mentorship of apprentices into high-value contributors.",
+        },
+        {
+          title: "AI Integration & Optimization",
+          content: "Implemented frontier AI/LLM tools via private deployment to automate content creation and SEO workflows, maintaining productivity while adhering to strict data privacy requirements.",
+        },
+      ],
+      technicalArchitecture: {
+        stack: ["Internal HTML Knowledge Base", "Microsoft Teams", "Private LLM Infrastructure", "Departmental Budgeting Frameworks"],
+        description: "A hybrid management architecture combining real-time communication with a static, deep-linked institutional knowledge base.",
+        dataFlow: "Strategy → Knowledge Base Check → AI-Assisted Execution → Teams Performance Sync → Financial Oversight Review.",
+        integrations: "Integrated EU AI Act-compliant frameworks for internal LLM usage and departmental financial health monitoring.",
+        rationale: "Selected a static HTML-based knowledge base to ensure zero-latency access to SOPs while using private AI models to maintain absolute data sovereignty.",
+      },
+      executionLeadership: {
+        stakeholders: "Corporate C-Suite, Finance Department, Apprentices/Junior Specialists",
+        teamLeadership: "Lead Architect of Culture & Talent. Directly responsible for the hiring, training, and professional development of the entire digital function.",
+        timeline: "Continuous progression from single-person dependency to a self-sufficient, high-output unit.",
+        riskMitigation: "Phased hiring to manage cash-flow impact, backed by 3-month probationary performance milestones to ensure rigorous quality control.",
+      },
+      outcomes: [
+        { label: "Key Person Dependency", value: "Eliminated" },
+        { label: "Net Revenue Growth", value: "+18%" },
+        { label: "SOPs Institutionalized", value: "47" },
+        { label: "Operational Readiness", value: "90 Days" },
+      ],
+      strategicImpact:
+        "Growing a team from just myself to four specialists was a profound transition. I had to stop doing everything myself and start building systems for others to succeed. Successfully introducing a high-performance, 'fresh wind' mindset into a traditionally stagnant company structure has been my most rewarding leadership challenge, transforming the digital function into a permanent, scalable asset.",
+    },
+  },
+  {
+    id: "eu-market-expansion",
+    title: "STRATEGIC EU MARKET EXPANSION & B2B PENETRATION",
+    category: "Market Expansion",
+    summary:
+      "Architected a high-velocity expansion strategy for France, Netherlands, and Benelux, integrating multilingual Shopify architecture with localized SEO and B2B partnership pipelines.",
+    kpis: [
+      { label: "Rev Growth (Y1)", value: "+9–11%" },
+      { label: "Exec. Timeline", value: "3 Weeks" },
+      { label: "Rev Growth (Y2)", value: "15%" },
+      { label: "Initial Markets", value: "3 EU" },
+    ],
+    techStack: ["Shopify Multilingual", "Excel/HTML Engine", "Google PMax", "Localized SEO"],
+    featured: true,
+    type: "WORK",
+    hasImage: false,
+    caseStudy: {
+      executiveSummary:
+        "I architected a high-velocity expansion strategy to capture market share across three key European regions (France, Netherlands, and the Benelux states). Within a three-week window, I conducted a deep-dive analysis covering keyword search volume, purchasing power, and competitor landscapes, producing a graphic Excel/HTML-based roadmap for stakeholders. This project correlates directly with our core commerce overhaul [shopify-store-building], integrating a multilingual Shopify storefront with localized SEO and dedicated performance marketing budgets.",
+      businessContext: [
+        { label: "Industry", value: "Premium Decor & Specialized Furniture" },
+        { label: "Company Stage", value: "Established brand moving into international market-share acquisition" },
+        { label: "Core Challenge", value: "Fragmented international presence and lack of localized user experiences in key purchasing regions" },
+        { label: "Opportunity", value: "High search volume in specific EU markets paired with an untapped B2B designer network" },
+      ],
+      strategicPhases: [
+        {
+          title: "Market Intelligence",
+          content: "Conducting rigorous research into competitor density and regional purchasing power to identify high-potential 'entry zones'.",
+        },
+        {
+          title: "Infrastructure Localisation",
+          content: "Leveraging Shopify’s multilingual capabilities to ensure localized navigation and optimized SEO for each target language.",
+        },
+        {
+          title: "Stakeholder Alignment",
+          content: "Onboarded the external ad agency within 21 days to deploy market-specific PMax campaigns with independent budgeting.",
+        },
+        {
+          title: "Omnichannel B2B Outreach",
+          content: "Developing a partnership pipeline targeting European architects and interior designers to position specialized product lines.",
+        },
+      ],
+      technicalArchitecture: {
+        stack: ["Shopify Multilingual", "Excel/HTML Visualization Engine", "Google Ads (Regional PMax)"],
+        description: "Localized storefronts with SEO-optimized navigation for target languages, powered by regional supplier integrations.",
+        dataFlow: "Market Research → Regional Roadmap → Multilingual Shopify Sub-store → Localized PMax Scaling.",
+        integrations: "Integration of regional supplier ateliers to facilitate localized assembly and B2B distribution agreements.",
+        rationale: "Excel/HTML engine developed for stakeholder visualization; Shopify selected for rapid deployment of localized frontend experiences.",
+      },
+      executionLeadership: {
+        stakeholders: "Company Leadership, Regional Supplier Ateliers, External Ad Agencies",
+        teamLeadership: "Lead Strategist & Expansion Architect. Currently guiding the transition from research-phase to full market implementation.",
+        timeline: "Ongoing Implementation (Research Complete). Standard planning cycle accelerated from months to 21 days.",
+        riskMitigation: "Established feedback loops to analyze per-country product performance, allowing for rapid storefront adaptations based on user behavior.",
+      },
+      outcomes: [
+        { label: "Projected Growth (Y1)", value: "+9–11%" },
+        { label: "Exec. Timeline", value: "21 Days" },
+        { label: "Projected Growth (Y2)", value: "15%" },
+        { label: "Target Regions", value: "FR, NL, Benelux" },
+        { label: "Status", value: "Ongoing" },
+      ],
+      strategicImpact:
+        "This project demonstrates our ability to combine high-level market research with immediate, aggressive execution. By framing the expansion as both a B2C and B2B play, we are not just entering new territories but building a sustainable ecosystem for long-term growth across the EU.",
+    },
+    links: [
+      { label: "Core Infrastructure (Shopify Project)", url: "/projects/shopify-store-building" }
+    ]
+  },
+  {
     id: "python-bi-dashboard",
     title: "PROPRIETARY BI SUITE: PREDICTIVE REVENUE & CASH FLOW ENGINE",
     category: "Machine Learning & Data",
@@ -200,79 +336,130 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "eu-market-expansion",
-    title: "Strategic EU Market Expansion",
-    category: "Market Expansion",
+    id: "local-custom-chatbot",
+    title: "SECURE PRODUCT-INTELLIGENCE ENGINE (LOCAL LLM)",
+    category: "Machine Learning & Data",
     summary:
-      "End-to-end strategic architecture for DTC brand expansion into 3 EU markets — covering market entry strategy, localisation infrastructure, regulatory compliance, and performance marketing launch.",
+      "Architecting a proprietary, high-security AI ecosystem to automate specialized content production while ensuring absolute data sovereignty via locally-hosted 7B/8B models.",
     kpis: [
-      { label: "Revenue", value: "+[£1.2M ARR]" },
-      { label: "Markets", value: "[3 EU]" },
-      { label: "Launch Time", value: "[14wks]" },
+      { label: "Data Sovereignty", value: "100%" },
+      { label: "API Licensing Fees", value: "Zero" },
+      { label: "Parameter Scale", value: "7B - 8B" },
+      { label: "Access Architecture", value: "Multi-User" },
     ],
-    techStack: ["Shopify Markets", "Klaviyo", "Meta Ads", "Lokalise", "Stripe", "EU VAT Systems"],
-    featured: true,
+    techStack: ["Mistral/Llama", "Python", "GGUF", "Inference Server"],
+    featured: false,
     type: "WORK",
-    hasImage: false,
     caseStudy: {
       executiveSummary:
-        "A high-growth UK DTC brand with proven domestic performance sought structured expansion into 3 EU markets (DE, NL, FR). The core challenge was simultaneous management of technical localisation, regulatory compliance, market-specific performance marketing, and operational logistics — without diluting UK growth trajectory. A 14-week expansion strategy delivered £1.2M projected ARR in new market revenue within the first operational year.",
+        "As Head of Digital, I am architecting a proprietary, high-security AI ecosystem to automate specialized content production while ensuring absolute data sovereignty. This initiative involves deploying a locally-hosted 7B/8B parameter LLM (Mistral/Llama) to function as a multimodal 'Product Intelligence' partner. The system is designed to bypass the privacy risks and recurring costs of cloud-based APIs, providing the team with a secure environment to generate SEO-optimized product descriptions and blog content in the company’s specific brand voice.",
       businessContext: [
-        { label: "Industry", value: "DTC E-Commerce — Consumer Goods" },
-        { label: "Company Stage", value: "Established UK brand, first international expansion" },
-        { label: "Core Challenge", value: "Multi-market complexity: localisation, compliance, logistics, and marketing simultaneously" },
-        { label: "Risk Level", value: "High — capital allocation and brand dilution risk" },
-        { label: "Opportunity", value: "3 addressable EU markets with validated UK product-market fit" },
+        { label: "Industry", value: "E-Commerce / AI Operations" },
+        { label: "Status", value: "Planning Phase / Strategic Roadmap" },
+        { label: "Core Challenge", value: "High-volume content needs vs strict corporate data privacy requirements" },
+        { label: "Opportunity", value: "Internal AI Agency that understands brand tone without cloud data egress" },
       ],
       strategicPhases: [
         {
-          title: "Phase 1 — Diagnosis",
-          content:
-            "Market sizing analysis for DE, NL, FR markets. Competitor landscape mapping. UK customer LTV and cohort analysis to inform market prioritisation. Regulatory gap analysis covering GDPR, VAT OSS, and consumer protection compliance requirements.",
+          title: "Selection & Quantization",
+          content: "Evaluating Mistral and Llama 7B/8B models for the optimal balance between creative output and CPU-based inference efficiency.",
         },
         {
-          title: "Phase 2 — System Design",
-          content:
-            "Shopify Markets architecture for multi-currency and multi-language. Lokalise integration for translation workflow. EU VAT OSS registration strategy. Market-specific paid media account structures. Localised Klaviyo email architecture with regional compliance.",
+          title: "System Prompt & Lock Architecture",
+          content: "Developing 'System Lock' logic that automatically applies brand-specific tone of voice and SEO-formatting rules based on user input.",
         },
         {
-          title: "Phase 3 — Implementation",
-          content:
-            "Shopify Markets deployment across 3 storefronts. Professional translation via Lokalise workflow. Meta Ads EU account structure with market-specific creatives. Klaviyo localisation with GDPR-compliant consent architecture. Logistics partner integration for EU fulfilment.",
-        },
-        {
-          title: "Phase 4 — Optimization",
-          content:
-            "Market-by-market ROAS analysis and budget reallocation. Creative performance iteration with local market insight. Retention flow optimisation by market cohort. Monthly strategic review cadence with market-specific KPI tracking.",
+          title: "Deployment & Governance",
+          content: "Building a centralized inference server for team-wide access with multi-account governance, token rate-limiting, and usage monitoring.",
         },
       ],
       technicalArchitecture: {
-        stack: ["Shopify Markets", "Lokalise TMS", "Meta Ads API", "Klaviyo", "Stripe (EU)", "EU VAT OSS", "Google Analytics 4 (multi-property)"],
-        description:
-          "Shopify Markets as localisation infrastructure hub. Separate GA4 properties per market for clean data segmentation. Centralised Klaviyo account with market-specific list architecture.",
-        dataFlow:
-          "User (EU) → Market-specific Shopify storefront → Unified PostgreSQL reporting layer → Market-segmented GA4 → Localised Klaviyo flows → EU-compliant data residency.",
-        integrations:
-          "Lokalise for translation lifecycle management. Stripe for EU payment method coverage (SEPA, iDEAL, Carte Bancaire). EU logistics WMS integration for cross-border fulfilment tracking.",
-        rationale:
-          "Shopify Markets selected over separate Shopify stores to maintain unified inventory management. Lokalise chosen for translation workflow transparency. Market-specific Meta ad accounts chosen for algorithmic isolation and budget control.",
+        stack: ["Mistral 7B / Llama 3 (8B)", "GGUF Quantization", "Python", "Local Inference Server"],
+        description: "To ensure the output isn't 'generic AI,' the system includes a specialized Context Injection layer for multimodal input and systematic brand tone-mapping.",
+        dataFlow: "Raw Product Data/Images → Local Inference Server → Brand-DNA System Prompts → SEO-Optimized Content Output.",
+        integrations: "Lightweight internal web interface for team-wide access without requiring specialized client-side hardware.",
+        rationale: "Optimized for CPU-based execution via GGUF quantization to maximize existing hardware ROI while ensuring 100% air-gapped security.",
       },
       executionLeadership: {
-        stakeholders: "CEO, CFO, Operations Director, EU Logistics Partner, Legal/Compliance Counsel",
-        teamLeadership: "Led cross-functional team: paid media specialist (EU markets), localisation coordinator, Shopify developer, compliance advisor.",
-        timeline: "14-week market entry timeline. Weeks 1–3: Strategy + compliance. Weeks 4–8: Infrastructure build. Weeks 9–12: Soft launch. Weeks 13–14: Full go-live.",
-        riskMitigation:
-          "Phased market entry — NL first (lowest regulatory complexity), then DE, then FR. Capital commitment gated on Phase 1 NL performance milestones. Weekly reporting cadence with pre-defined exit criteria per market.",
+        stakeholders: "Corporate Stakeholders, Content Specialists, IT Infrastructure Team",
+        teamLeadership: "Acting as Lead Architect & AI Strategist, shifting manual drafting workflows into an AI-assisted verification model.",
+        timeline: "Active Strategic Roadmap — progressing from selection to departmental resource rollout.",
+        riskMitigation: "100% local deployment ensures zero data leakage, presenting a secure alternative to commercial SaaS solutions.",
       },
       outcomes: [
-        { label: "Projected ARR (Year 1)", value: "+[£1.2M]" },
-        { label: "Markets Live", value: "[3 — DE, NL, FR]" },
-        { label: "Launch Timeline", value: "[14 weeks]" },
-        { label: "EU ROAS (Month 3)", value: "[2.8x]" },
-        { label: "Compliance Items Cleared", value: "[18/18]" },
+        { label: "Data Sovereignty", value: "100%" },
+        { label: "API Licensing Costs", value: "Zero" },
+        { label: "Model Scale", value: "7B-8B" },
+        { label: "System Security", value: "Air-Gapped" },
       ],
       strategicImpact:
-        "Entering the EU market was a massive logistics puzzle. I had to learn the ins and outs of VAT OSS and multi-market shipping on the fly. It was stressful but seeing the first orders roll in from Germany and France made all those late nights worth it. I'm proud that I built a playbook that we can now reuse for any new market.",
+        "Solving the tension between AI speed and corporate privacy felt like finding a way to have our cake and eat it too. By architecting this 'internal agency,' I'm not just saving on API fees; I'm building a permanent asset that understands our brand DNA better than any third-party model ever could. It's about moving from being a consumer of AI to being an owner of highly specialized intelligence.",
+    },
+  },
+  {
+    id: "performance-marketing",
+    title: "STRATEGIC PERFORMANCE MARKETING & AD-TECH OVERHAUL",
+    category: "Leadership & Operations",
+    summary:
+      "Spearheaded a strategic shift in performance marketing, onboarding specialized Google strategist partners to replace legacy tracking with robust, data-verified infrastructure for 371% ROAS uplift.",
+    kpis: [
+      { label: "Total ROAS", value: "+371%" },
+      { label: "Peak PMax", value: "1127%" },
+      { label: "CPC Reduction", value: "-29%" },
+      { label: "Testing Volume", value: "18/mo" },
+    ],
+    techStack: ["Google Ads", "Merchant Center", "GTM", "GA4", "Looker Studio"],
+    featured: false,
+    type: "WORK",
+    caseStudy: {
+      executiveSummary:
+        "Identifying significant untapped potential in our existing ad spend, I spearheaded a strategic shift in our performance marketing function. I led the sourcing and onboarding of a specialized Google Ads agency—led by a former Google strategist—to replace fragmented, 'spooky' tracking with a robust, data-verified infrastructure. By acting as the Lead Strategist and Project Manager, I coordinated the deployment of advanced PMax and Shopping campaigns, resulting in a 371% increase in total ROAS and a 29% reduction in CPC, all while maintaining a consistent budget compared to previous years.",
+      businessContext: [
+        { label: "Industry", value: "DTC E-Commerce" },
+        { label: "Company Stage", value: "Growth — scaling paid acquisition through data-driven precision" },
+        { label: "Core Challenge", value: "Declining ROAS and unreliable attribution prevented confident scaling of ad spend" },
+        { label: "Opportunity", value: "Implement verified Google Ads tracking and expert retargeting to maximize efficiency of current budgets" },
+      ],
+      strategicPhases: [
+        {
+          title: "Diagnosis",
+          content: "Audited legacy ad accounts to uncover tracking discrepancies and misattributed conversions.",
+        },
+        {
+          title: "Partner Selection",
+          content: "Sourced and vetted a high-tier agency partner with deep Google-internal expertise.",
+        },
+        {
+          title: "Infrastructure Rehaul",
+          content: "Oversaw the implementation of 'clean' data collection and server-side tracking to future-proof attribution.",
+        },
+        {
+          title: "Campaign Architecture",
+          content: "Collaborated with the agency to design high-performance PMax and Shopping structures with advanced retargeting logic.",
+        },
+      ],
+      technicalArchitecture: {
+        stack: ["Google Ads (PMax, Shopping)", "Merchant Center", "Google Tag Manager", "GA4"],
+        description: "Advanced PMax and Shopping structures with advanced retargeting logic and feed optimization.",
+        dataFlow: "Merchant Center Feed → Google Ads PMax/Shopping → GTM Server-Side Tracking → GA4 → Looker Studio Dashboards.",
+        integrations: "Integrated server-side tracking and Looker Studio for unified cross-channel visualization.",
+        rationale: "Vite chosen for near-instant HMR; Tailwind CSS selected for utility-first styling without CSS specificity conflicts.",
+      },
+      executionLeadership: {
+        stakeholders: "Secured C-suite buy-in for agency shift by demonstrating projected ROI vs. legacy performance.",
+        teamLeadership: "Lead Strategist & Agency Project Manager. Coordinated with specialized Google strategist agency for high-performance campaign deployment.",
+        timeline: "Integrating this agency partner into the Strategic EU Market Expansion [eu-market-expansion] to conduct audits for new territories.",
+        riskMitigation: "Established automated pause thresholds for campaigns to prevent budget wastage during creative fatigue.",
+      },
+      outcomes: [
+        { label: "Total ROAS Uplift", value: "+371%" },
+        { label: "Peak PMax ROAS", value: "1127%" },
+        { label: "CPC Reduction", value: "-29%" },
+        { label: "Testing Volume", value: "18/mo" },
+        { label: "Ad Spend", value: "Stable" },
+      ],
+      strategicImpact:
+        "Transforming the marketing function from a cost center into a high-yield growth engine proved that growth is driven by efficiency and tracking strategy rather than simply increasing budget. The 1127% ROAS achievement on our primary PMax campaign stands as a testament to the power of clean data and expert agency coordination.",
     },
   },
   {
@@ -288,7 +475,7 @@ export const projects: Project[] = [
       { label: "Forecast Accuracy", value: "<15% MAPE" },
     ],
     techStack: ["Python", "SQLite", "PyQt6", "scikit-learn", "Prophet", "Scipy"],
-    featured: true,
+    featured: false,
     type: "WORK",
     hasImage: true,
     caseStudy: {
@@ -350,6 +537,76 @@ export const projects: Project[] = [
       strategicImpact:
         "Building this system was a turning point for how we understood our own profitability. I remember the relief of finally seeing a real-time 'What-If' scenario for our most expensive products and realizing we could optimize margins by 8% just by shifting our ad spend strategy. It felt like finally having a GPS after years of driving by intuition.",
     },
+  },
+  {
+    id: "react-landing-ecosystem",
+    title: "MODULAR WEB ECOSYSTEM & SERVICE INFRASTRUCTURE",
+    category: "Infrastructure & Systems",
+    summary:
+      "Architected a modular React-based ecosystem for service and informational web properties, enabling 83% faster deployment of high-performance domains via a reusable TypeScript component library.",
+    kpis: [
+      { label: "Launch Time", value: "-83%" },
+      { label: "Web Properties", value: "4" },
+      { label: "Conversion Rate", value: "+31%" },
+      { label: "Accessibility", value: "100%" },
+    ],
+    techStack: ["TypeScript", "React 18", "Vite", "Tailwind CSS", "Vercel"],
+    featured: false,
+    type: "WORK",
+    caseStudy: {
+      executiveSummary:
+        "To support the expansion of our brand beyond traditional e-commerce, I architected a modular React-based ecosystem for our service and informational web properties. By moving away from rigid templates to a high-performance stack (TypeScript, Vite, Tailwind), I enabled the rapid deployment of multiple domains—including specialized service sites like zimmerbrunnen-service.at. This transition reduced launch times by 83% and provided a seamless, informational layer to our digital footprint that complements our primary sales channels.",
+      businessContext: [
+        { label: "Industry", value: "Digital Service & High-End Maintenance" },
+        { label: "Company Stage", value: "Growth — expanding into service-based revenue streams" },
+        { label: "Core Challenge", value: "Legacy web creation was slow and lacked the performance needed for SEO-driven informational content" },
+        { label: "Opportunity", value: "Build a reusable component library to launch high-performance, informational domains at scale" },
+      ],
+      strategicPhases: [
+        {
+          title: "Diagnosis",
+          content: "Audited existing page launch workflows and identified 3-week engineering dependencies per landing page.",
+        },
+        {
+          title: "System Design",
+          content: "Architected a modular component library using TypeScript interfaces to ensure consistent design across all domains.",
+        },
+        {
+          title: "Implementation",
+          content: "Developed 34+ reusable React/Tailwind components, allowing for the rapid assembly of sites like wandbrunnen.at.",
+        },
+        {
+          title: "Deployment",
+          content: "Established a streamlined Vercel/Git-based workflow for instant updates across the multi-domain ecosystem.",
+        },
+      ],
+      technicalArchitecture: {
+        stack: ["TypeScript", "React 18", "Vite", "Tailwind CSS"],
+        description: "34-component library with strict prop-types for type safety and developer experience.",
+        dataFlow: "Marketing team → modular assembly → Git commit → Vercel auto-deploy → Live URL.",
+        integrations: "Maintained static HTML/CSS/Vanilla JS builds for ultra-lightweight informational sites where appropriate.",
+        rationale: "Vite chosen for near-instant HMR; Tailwind CSS selected for utility-first styling without CSS specificity conflicts.",
+      },
+      executionLeadership: {
+        stakeholders: "Head of Marketing, Lead Frontend Architect",
+        teamLeadership: "Enabled the marketing team to launch and update informational content independently through the modular system.",
+        timeline: "12-week total build-out from architecture to the first 4 domains going live.",
+        riskMitigation: "Integrated Lighthouse-driven performance monitoring to maintain scores above 90/100 across all properties.",
+      },
+      outcomes: [
+        { label: "Launch Time Reduction", value: "-83%" },
+        { label: "Conversion Improvement", value: "+31%" },
+        { label: "Domains Live", value: "4" },
+        { label: "Dependencies", value: "Eliminated" },
+        { label: "Lighthouse Score", value: "90+" },
+      ],
+      strategicImpact:
+        "Building these informational and service-based sites removed the technical bottleneck for the company to test new markets and services beyond standard e-commerce. It transformed the frontend stack into an internal marketing accelerator, allowing us to ship at engineering quality without engineering overhead.",
+    },
+    links: [
+      { label: "zimmerbrunnen-service.at", url: "https://zimmerbrunnen-service.at" },
+      { label: "wandbrunnen.at", url: "https://wandbrunnen.at" },
+    ],
   },
   {
     id: "magento-migration",
@@ -418,283 +675,6 @@ export const projects: Project[] = [
       ],
       strategicImpact:
         "Migrating and consolidating four separate Magento stores at once felt like conducting an orchestra during an earthquake. I had to lead the dev agency through every sprint, ensuring the 4:1 consolidation didn't break our global presence. Personally architecting the navigation logic for multiple domains was a massive puzzle, but seeing all four storefronts go live from a single backend with zero downtime was a career-defining moment of relief.",
-    },
-  },
-  {
-    id: "local-custom-chatbot",
-    title: "SECURE PRODUCT-INTELLIGENCE ENGINE (LOCAL LLM)",
-    category: "Machine Learning & Data",
-    summary:
-      "Architecting a proprietary, high-security AI ecosystem to automate specialized content production while ensuring absolute data sovereignty via locally-hosted 7B/8B models.",
-    kpis: [
-      { label: "Data Sovereignty", value: "100%" },
-      { label: "API Licensing Fees", value: "Zero" },
-      { label: "Parameter Scale", value: "7B - 8B" },
-      { label: "Access Architecture", value: "Multi-User" },
-    ],
-    techStack: ["Mistral/Llama", "Python", "GGUF", "Inference Server"],
-    featured: false,
-    type: "WORK",
-    caseStudy: {
-      executiveSummary:
-        "As Head of Digital, I am architecting a proprietary, high-security AI ecosystem to automate specialized content production while ensuring absolute data sovereignty. This initiative involves deploying a locally-hosted 7B/8B parameter LLM (Mistral/Llama) to function as a multimodal 'Product Intelligence' partner. The system is designed to bypass the privacy risks and recurring costs of cloud-based APIs, providing the team with a secure environment to generate SEO-optimized product descriptions and blog content in the company’s specific brand voice.",
-      businessContext: [
-        { label: "Industry", value: "E-Commerce / AI Operations" },
-        { label: "Status", value: "Planning Phase / Strategic Roadmap" },
-        { label: "Core Challenge", value: "High-volume content needs vs strict corporate data privacy requirements" },
-        { label: "Opportunity", value: "Internal AI Agency that understands brand tone without cloud data egress" },
-      ],
-      strategicPhases: [
-        {
-          title: "Selection & Quantization",
-          content: "Evaluating Mistral and Llama 7B/8B models for the optimal balance between creative output and CPU-based inference efficiency.",
-        },
-        {
-          title: "System Prompt & Lock Architecture",
-          content: "Developing 'System Lock' logic that automatically applies brand-specific tone of voice and SEO-formatting rules based on user input.",
-        },
-        {
-          title: "Deployment & Governance",
-          content: "Building a centralized inference server for team-wide access with multi-account governance, token rate-limiting, and usage monitoring.",
-        },
-      ],
-      technicalArchitecture: {
-        stack: ["Mistral 7B / Llama 3 (8B)", "GGUF Quantization", "Python", "Local Inference Server"],
-        description: "To ensure the output isn't 'generic AI,' the system includes a specialized Context Injection layer for multimodal input and systematic brand tone-mapping.",
-        dataFlow: "Raw Product Data/Images → Local Inference Server → Brand-DNA System Prompts → SEO-Optimized Content Output.",
-        integrations: "Lightweight internal web interface for team-wide access without requiring specialized client-side hardware.",
-        rationale: "Optimized for CPU-based execution via GGUF quantization to maximize existing hardware ROI while ensuring 100% air-gapped security.",
-      },
-      executionLeadership: {
-        stakeholders: "Corporate Stakeholders, Content Specialists, IT Infrastructure Team",
-        teamLeadership: "Acting as Lead Architect & AI Strategist, shifting manual drafting workflows into an AI-assisted verification model.",
-        timeline: "Active Strategic Roadmap — progressing from selection to departmental resource rollout.",
-        riskMitigation: "100% local deployment ensures zero data leakage, presenting a secure alternative to commercial SaaS solutions.",
-      },
-      outcomes: [
-        { label: "Data Sovereignty", value: "100%" },
-        { label: "API Licensing Costs", value: "Zero" },
-        { label: "Model Scale", value: "7B-8B" },
-        { label: "System Security", value: "Air-Gapped" },
-      ],
-      strategicImpact:
-        "Solving the tension between AI speed and corporate privacy felt like finding a way to have our cake and eat it too. By architecting this 'internal agency,' I'm not just saving on API fees; I'm building a permanent asset that understands our brand DNA better than any third-party model ever could. It's about moving from being a consumer of AI to being an owner of highly specialized intelligence.",
-    },
-  },
-  {
-    id: "server-architecture",
-    title: "Server Architecture Rehaul",
-    category: "Infrastructure & Systems",
-    summary:
-      "Complete infrastructure modernisation from legacy on-premise servers to cloud-native architecture — reducing hosting costs, eliminating downtime, and enabling auto-scaling for peak periods.",
-    kpis: [
-      { label: "Uptime", value: "[99.97%]" },
-      { label: "Infra Cost", value: "−[42%]" },
-      { label: "Deploy Speed", value: "+[600%]" },
-    ],
-    techStack: ["AWS", "Docker", "Kubernetes", "Terraform", "GitHub Actions", "CloudFront"],
-    featured: false,
-    type: "WORK",
-    caseStudy: {
-      executiveSummary:
-        "Legacy on-premise server infrastructure was generating recurring downtime incidents, preventing auto-scaling during peak trading periods, and consuming disproportionate IT resource for maintenance. A phased migration to cloud-native AWS architecture with containerisation and CI/CD automation reduced infrastructure costs by 42%, achieved 99.97% uptime, and enabled 10-minute deployments vs. 3-hour manual processes.",
-      businessContext: [
-        { label: "Industry", value: "Digital Commerce" },
-        { label: "Company Stage", value: "Growth — infrastructure bottleneck limiting scale" },
-        { label: "Core Challenge", value: "On-premise downtime risk, no auto-scaling, high maintenance overhead" },
-        { label: "Risk Level", value: "High — peak trading period revenue exposure" },
-        { label: "Opportunity", value: "Cloud-native infrastructure enabling elastic scaling and deployment velocity" },
-      ],
-      strategicPhases: [
-        { title: "Phase 1 — Diagnosis", content: "Infrastructure audit: 6 on-premise servers, 14 applications, deployment process analysis, downtime incident review (23 incidents in 12 months), cost analysis." },
-        { title: "Phase 2 — System Design", content: "AWS architecture design with EKS for Kubernetes orchestration. Terraform infrastructure-as-code specification. Docker containerisation strategy for 14 applications. CI/CD pipeline design with GitHub Actions." },
-        { title: "Phase 3 — Implementation", content: "Docker containerisation of all 14 applications. EKS cluster deployment via Terraform. GitHub Actions CI/CD pipelines. CloudFront CDN configuration. Monitoring stack: CloudWatch + PagerDuty." },
-        { title: "Phase 4 — Optimization", content: "Auto-scaling policy tuning based on peak traffic patterns. Reserved instance cost optimisation. Security hardening with AWS WAF and Shield. Cost monitoring dashboards with budget alerts." },
-      ],
-      technicalArchitecture: {
-        stack: ["AWS EKS", "Docker", "Kubernetes", "Terraform", "GitHub Actions", "CloudFront CDN", "AWS RDS", "CloudWatch", "PagerDuty"],
-        description: "Kubernetes-orchestrated container infrastructure on AWS EKS. Infrastructure-as-code via Terraform enables reproducible environments. CloudFront CDN for global performance.",
-        dataFlow: "Code commit → GitHub Actions CI → Docker build + test → EKS deployment → CloudFront cache invalidation → PagerDuty monitoring.",
-        integrations: "PagerDuty for incident management. AWS Cost Explorer for spend monitoring. Datadog for application performance monitoring.",
-        rationale: "AWS selected for ecosystem maturity and managed Kubernetes (EKS) reducing operational overhead. Terraform chosen for multi-environment consistency and infrastructure auditability.",
-      },
-      executionLeadership: {
-        stakeholders: "CTO, IT Director, Development Team Lead, Security Officer",
-        teamLeadership: "Led DevOps engineer and cloud architect. Coordinated with development team for application containerisation. Managed 4-week parallel operation period.",
-        timeline: "20-week migration. Zero customer-facing downtime during cutover. Phased by application criticality.",
-        riskMitigation: "Blue-green deployment strategy for zero-downtime migration. On-premise infrastructure maintained as failover for 60 days. Comprehensive runbook for every migration step.",
-      },
-      outcomes: [
-        { label: "Infrastructure Uptime", value: "[99.97%]" },
-        { label: "Infrastructure Cost Reduction", value: "−[42%]" },
-        { label: "Deployment Speed", value: "+[600%]" },
-        { label: "Incident Rate Reduction", value: "−[96%]" },
-        { label: "Applications Containerised", value: "[14/14]" },
-      ],
-      strategicImpact:
-        "Moving from legacy on-premise hardware to AWS was a complete mindset shift for the company. I had to lead the charge on containerization and Terraform, which was a steep learning curve for everyone. Seeing our deploy speed jump by 600% changed how we think about shipping code. It felt like moving from a steam engine to a rocket ship.",
-    },
-  },
-  {
-    id: "react-landing-ecosystem",
-    title: "React Landing Page Ecosystem",
-    category: "Infrastructure & Systems",
-    summary:
-      "Modular React component library and landing page system enabling marketing team to launch high-performance campaign pages without engineering dependency.",
-    kpis: [
-      { label: "Launch Time", value: "−[83%]" },
-      { label: "Conversion", value: "+[31%]" },
-      { label: "Engineering Dep.", value: "−[100%]" },
-    ],
-    techStack: ["React", "TypeScript", "Vite", "Tailwind CSS", "Storybook", "Vercel"],
-    featured: false,
-    type: "WORK",
-    caseStudy: {
-      executiveSummary:
-        "Marketing team was bottlenecked on engineering resource for campaign landing page creation — average 3-week wait per page with inconsistent quality and performance. A modular React component library was architected and built, enabling the marketing team to assemble high-performance landing pages independently, reducing time-to-launch by 83% and improving conversion rates by 31% through performance-optimised components.",
-      businessContext: [
-        { label: "Industry", value: "Digital Commerce / SaaS" },
-        { label: "Company Stage", value: "Growth — marketing velocity bottlenecked by engineering" },
-        { label: "Core Challenge", value: "3-week engineering dependency per landing page, inconsistent quality, poor Core Web Vitals" },
-        { label: "Risk Level", value: "Medium — marketing velocity and campaign ROI impact" },
-        { label: "Opportunity", value: "Self-service component system enabling marketing autonomy at engineering quality" },
-      ],
-      strategicPhases: [
-        { title: "Phase 1 — Diagnosis", content: "Audit of 24 existing landing pages: performance scores (avg. 52/100 Lighthouse), conversion rates, design inconsistency inventory, and engineering time tracking." },
-        { title: "Phase 2 — System Design", content: "Component architecture specification: 34 modular components covering all landing page patterns. Design token system. Storybook documentation structure. Vercel deployment workflow for marketing team." },
-        { title: "Phase 3 — Implementation", content: "34 React components built in TypeScript with Tailwind CSS. Storybook documentation for each component. Visual page builder configuration. Vercel automated deployment pipeline. Marketing team training programme." },
-        { title: "Phase 4 — Optimization", content: "Performance monitoring dashboard for all live pages. Component usage analytics to prioritise improvements. A/B testing integration at component level. Quarterly design system review cycle." },
-      ],
-      technicalArchitecture: {
-        stack: ["React 18", "TypeScript", "Vite", "Tailwind CSS", "Storybook", "Vercel", "Playwright (testing)", "Radix UI"],
-        description: "34-component library with TypeScript interfaces ensuring consistent prop contracts. Storybook as living documentation. Vercel for zero-configuration deployments.",
-        dataFlow: "Marketing team → Storybook component selection → Page assembly → Git commit → Vercel auto-deploy → Live URL within minutes.",
-        integrations: "Figma design token sync for design consistency. Google Analytics 4 event tracking built into components. HubSpot form integration as standard component.",
-        rationale: "React + TypeScript for type safety and developer experience. Tailwind CSS for utility-first styling with no CSS specificity issues. Vercel for instant preview deployments reducing review friction.",
-      },
-      executionLeadership: {
-        stakeholders: "Head of Marketing, Development Team Lead, Design Lead, Product Manager",
-        teamLeadership: "Led React developer and UX designer. Ran 3 stakeholder workshops to define component requirements from marketing team needs.",
-        timeline: "12-week build. Weeks 1–3: Architecture. Weeks 4–9: Component build. Weeks 10–11: Documentation + training. Week 12: Handover.",
-        riskMitigation: "Marketing team involved in weekly reviews throughout build. Beta programme with 2 landing pages before full rollout. Engineering review gate for any new component additions.",
-      },
-      outcomes: [
-        { label: "Page Launch Time Reduction", value: "−[83%]" },
-        { label: "Conversion Rate Improvement", value: "+[31%]" },
-        { label: "Engineering Dependency", value: "[Eliminated]" },
-        { label: "Components Built", value: "[34]" },
-        { label: "Lighthouse Score (avg)", value: "[94/100]" },
-      ],
-      strategicImpact:
-        "I was tired of seeing the marketing team wait weeks for simple landing pages. Building this component library was my way of 'teaching them to fish.' It took some time to get the TypeScript contracts right, but now they ship at engineering quality without needing me. It's the ultimate productivity hack.",
-    },
-  },
-  {
-    id: "digital-team-leadership",
-    title: "Building & Leading Digital Team",
-    category: "Leadership & Operations",
-    summary:
-      "Structured build-out of a 4-specialist digital team from scratch — defining roles, hiring, onboarding, and establishing operating systems that delivered measurable performance gains within 90 days.",
-    kpis: [
-      { label: "Team Size", value: "[4 Specialists]" },
-      { label: "Revenue Impact", value: "+[18%]" },
-      { label: "90-Day Ramp", value: "[Full Output]" },
-    ],
-    techStack: ["Notion", "Linear", "Slack", "Loom", "Google Workspace", "Looker Studio"],
-    featured: false,
-    type: "WORK",
-    caseStudy: {
-      executiveSummary:
-        "Digital function was operating as a single-person dependency with no documented systems, inconsistent performance, and no scalability. Structured a 4-specialist team build: defined role architecture, ran hiring process, built onboarding systems, and established operating frameworks that delivered full team output within 90 days and contributed to +18% net revenue growth within the first year.",
-      businessContext: [
-        { label: "Industry", value: "Digital Commerce" },
-        { label: "Company Stage", value: "Growth — single-person digital dependency" },
-        { label: "Core Challenge", value: "No team structure, no documented systems, no scalability" },
-        { label: "Risk Level", value: "High — key person dependency on all digital operations" },
-        { label: "Opportunity", value: "Structured team build enabling digital function to scale independently" },
-      ],
-      strategicPhases: [
-        { title: "Phase 1 — Diagnosis", content: "Capability gap analysis against digital function requirements. Role architecture design covering paid media, email/retention, content, and analytics. Salary benchmarking and hiring timeline planning." },
-        { title: "Phase 2 — System Design", content: "Operating system design: Notion workspace architecture, Linear project management, weekly cadence structure, OKR framework, performance review system, and SOP documentation framework." },
-        { title: "Phase 3 — Implementation", content: "4-specialist hiring process: job brief writing, agency briefing, interview framework, technical assessment design, and offer negotiation. 30-60-90 day onboarding programme per role. Operating systems deployed." },
-        { title: "Phase 4 — Optimization", content: "Weekly 1:1 cadence established. Monthly OKR review. Quarterly performance calibration. Skill development plans per specialist. Team reporting dashboard in Looker Studio." },
-      ],
-      technicalArchitecture: {
-        stack: ["Notion (Operations OS)", "Linear (Project Management)", "Slack (Communication)", "Loom (Async Training)", "Looker Studio (Reporting)", "Google Workspace"],
-        description: "Notion as the central operating system: SOPs, briefs, project tracking, and knowledge base. Linear for sprint-based project management. Looker Studio for team performance visibility.",
-        dataFlow: "Strategy → Linear sprint tasks → Specialist execution → Looker Studio performance data → Weekly review → Strategy refinement.",
-        integrations: "Looker Studio connected to GA4, Meta Ads, Google Ads, and Klaviyo for unified team performance dashboard. Slack + Linear integration for automated project notifications.",
-        rationale: "Notion chosen for flexibility in building custom operating systems without engineering resource. Linear selected for its engineering-grade project management applied to digital marketing operations.",
-      },
-      executionLeadership: {
-        stakeholders: "CEO, HR Director, Finance Director (budget approval)",
-        teamLeadership: "Defined all 4 roles, ran hiring process end-to-end, built all onboarding materials, established coaching cadence, and designed performance management framework.",
-        timeline: "6-month full build. Month 1: Role design + hiring briefs. Months 2–3: Hiring. Month 4: Onboarding. Months 5–6: Full operation + optimisation.",
-        riskMitigation: "Phased hiring to manage cashflow impact. 3-month probationary performance milestones defined in advance. Cross-training between roles to eliminate single-specialist dependencies.",
-      },
-      outcomes: [
-        { label: "Team Built", value: "[4 Specialists]" },
-        { label: "Revenue Growth Contribution", value: "+[18%]" },
-        { label: "Time to Full Output", value: "[90 days]" },
-        { label: "SOPs Documented", value: "[47]" },
-        { label: "Key Person Dependency", value: "[Eliminated]" },
-      ],
-      strategicImpact:
-        "Growing a team from just myself to four specialists was a profound transition. I had to stop doing everything myself and start building systems for others to succeed. Documenting those 47 SOPs was a grind, but seeing the team operate at full output within 90 days is my proudest leadership achievement.",
-    },
-  },
-  {
-    id: "performance-marketing",
-    title: "Performance Marketing Oversight",
-    category: "Leadership & Operations",
-    summary:
-      "End-to-end performance marketing strategy and execution leadership across Meta, Google, and TikTok — delivering +371% ROAS improvement through systematic testing, creative strategy, and attribution architecture.",
-    kpis: [
-      { label: "ROAS", value: "+[371%]" },
-      { label: "CAC", value: "−[34%]" },
-      { label: "Channels", value: "[3 Active]" },
-    ],
-    techStack: ["Meta Ads", "Google Ads", "TikTok Ads", "Triple Whale", "Northbeam", "GA4"],
-    featured: false,
-    type: "WORK",
-    caseStudy: {
-      executiveSummary:
-        "Performance marketing function was running on intuition-based optimisation with poor attribution infrastructure, no systematic creative testing framework, and declining ROAS quarter-on-quarter. A structured performance marketing system was built: multi-touch attribution, systematic creative testing cadence, audience architecture redesign, and channel budget allocation model. Result: +371% ROAS improvement year-on-year with 34% reduction in customer acquisition cost.",
-      businessContext: [
-        { label: "Industry", value: "DTC E-Commerce" },
-        { label: "Company Stage", value: "Growth — paid acquisition scaling challenge" },
-        { label: "Core Challenge", value: "Declining ROAS, no attribution clarity, no creative testing system" },
-        { label: "Risk Level", value: "High — significant paid media budget with deteriorating efficiency" },
-        { label: "Opportunity", value: "Systematic performance marketing engine with compounding efficiency gains" },
-      ],
-      strategicPhases: [
-        { title: "Phase 1 — Diagnosis", content: "Full account audit across Meta, Google, and TikTok. Attribution model analysis — identified 64% of conversions were mis-attributed. Creative performance analysis: top 20% of ads generating 89% of revenue. Audience overlap analysis revealing significant budget wastage." },
-        { title: "Phase 2 — System Design", content: "Attribution architecture: Triple Whale MTA + Meta CAPI for signal quality. Creative testing framework: 2-2-2 testing structure (2 hooks, 2 bodies, 2 CTAs). Audience architecture: interest exclusion, LTV-based lookalikes, and retention campaigns. Budget allocation model across channels." },
-        { title: "Phase 3 — Implementation", content: "Triple Whale + Northbeam MTA deployment. Meta CAPI implementation. Audience architecture rebuild. Creative testing sprint: 18 new creatives per month. Google Ads restructure: PMAX + branded + non-branded segmentation. TikTok Ads launch with UGC creative strategy." },
-        { title: "Phase 4 — Optimization", content: "Weekly creative performance review cadence. Monthly audience architecture review. Quarterly channel allocation rebalancing. Creative fatigue monitoring with automated pause thresholds. Incrementality testing for budget justification." },
-      ],
-      technicalArchitecture: {
-        stack: ["Meta Ads Manager", "Google Ads", "TikTok Ads Manager", "Triple Whale MTA", "Northbeam", "Meta CAPI", "GA4", "Looker Studio"],
-        description: "Multi-touch attribution layer (Triple Whale + Northbeam) sits above all channel reporting. Meta CAPI ensures server-side signal quality. Looker Studio for unified cross-channel view.",
-        dataFlow: "Ad impression → Click → Shopify purchase event → Meta CAPI server-side → Triple Whale MTA model → Channel attribution credit → Looker Studio reporting.",
-        integrations: "Triple Whale connected to Shopify, Meta, Google, and TikTok for unified attribution. Northbeam as secondary MTA model for budget decision validation.",
-        rationale: "MTA layer critical given iOS 14+ signal loss. Triple Whale selected for Shopify-native integration and DTC-specific attribution models. Northbeam as validation layer to reduce single-model dependency.",
-      },
-      executionLeadership: {
-        stakeholders: "CEO, CFO (budget authority), Creative Director, Retention Manager",
-        teamLeadership: "Led paid media specialist and creative strategist. Briefed and managed UGC creator network of 8 creators. Weekly performance review with CEO and CFO.",
-        timeline: "Ongoing strategic oversight. Initial restructure: 8 weeks. Systematic testing cadence: monthly. Quarterly strategic reviews.",
-        riskMitigation: "Budget reallocation gated on 30-day performance data. Incrementality tests before major budget increases. Creative reserves maintained to prevent ad fatigue downtime.",
-      },
-      outcomes: [
-        { label: "ROAS Improvement", value: "+[371%]" },
-        { label: "CAC Reduction", value: "−[34%]" },
-        { label: "Active Paid Channels", value: "[3]" },
-        { label: "Creative Testing Volume", value: "[18/month]" },
-        { label: "Attribution Accuracy", value: "+[64%]" },
-      ],
-      strategicImpact:
-        "Restructuring our paid media attribution was a battle against 'intuition-based' spending. I had to fight for Triple Whale and Northbeam to get the data we needed. Boosting ROAS by 371% proved that a data-first approach wins every time. It's not just about spending money; it's about the math behind the scale.",
     },
   },
 ];

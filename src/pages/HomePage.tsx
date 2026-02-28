@@ -375,33 +375,39 @@ export function HomePage({ onOpenCaseStudy, onNavigate }: HomePageProps) {
       </section>
 
       {/* CONTACT SECTION */}
-      <section id="contact" className="py-20 md:py-28" style={{ borderBottom: "3px solid #000" }}>
-        <div className="max-width-screen-xl mx-auto px-5 md:px-8">
+      <section id="contact" className="py-20 md:py-32" style={{ borderBottom: "3px solid #000" }}>
+        <div className="max-w-screen-xl mx-auto px-5 md:px-8">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-3 h-3 bg-[#FFCC00]" style={{ border: "2px solid #000" }} />
             <span className="font-mono text-xs uppercase tracking-widest font-bold">Contact</span>
           </div>
-          <div className="grid md:grid-cols-2 gap-12 md:gap-20">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-black uppercase mb-6">Let's Work<br />Together.</h2>
-              <p className="text-gray-600 leading-relaxed mb-8 max-w-md">
-                Available for strategic advisory engagements, technical project leadership, and fractional Head of Digital roles with organisations building serious digital capability.
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-12">
+            <div className="max-w-xl">
+              <h2 className="text-5xl md:text-7xl font-black uppercase mb-6 leading-[0.95]">
+                Get In<br />Touch.
+              </h2>
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-medium">
+                Available for strategic advisory, technical project leadership, and fractional digital leadership roles.
               </p>
-              <div className="space-y-4">
-                {[
-                  { label: "Response Time", value: "48 hours" },
-                  { label: "Availability", value: "Limited advisory slots" },
-                  { label: "Engagement Types", value: "Advisory · Project · Fractional" },
-                ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-4">
-                    <div className="text-xs font-mono font-bold uppercase tracking-widest text-gray-500 w-36">{item.label}</div>
-                    <div className="font-medium">{item.value}</div>
-                  </div>
-                ))}
-              </div>
             </div>
-            <div>
-              <ContactForm />
+
+            <div className="flex flex-col sm:flex-row gap-6">
+              <a
+                href="mailto:markoxtomic@gmail.com"
+                className="flex items-center justify-center gap-6 px-14 py-10 font-black uppercase tracking-widest text-xl bg-black text-white border-[6px] border-black transition-all hover:bg-[#FFCC00] hover:text-black shrink-0"
+                style={{ transitionDuration: '0.15s' }}
+              >
+                E-Mail →
+              </a>
+              <a
+                href="https://www.linkedin.com/in/markoxtomic"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-6 px-14 py-10 font-black uppercase tracking-widest text-xl bg-white text-black border-[6px] border-black transition-all hover:bg-black hover:text-white shrink-0"
+                style={{ transitionDuration: '0.15s' }}
+              >
+                LinkedIn →
+              </a>
             </div>
           </div>
         </div>
@@ -474,78 +480,5 @@ function FAQAccordion() {
         </div>
       ))}
     </div>
-  );
-}
-
-function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
-
-  if (submitted) {
-    return (
-      <div className="p-8 text-center" style={{ border: "3px solid #000", background: "#FFCC00" }}>
-        <div className="text-4xl font-black mb-3">✓</div>
-        <div className="font-black uppercase text-lg">Message Received</div>
-        <div className="text-sm mt-2 text-gray-700">Response within 48 hours.</div>
-      </div>
-    );
-  }
-
-  return (
-    <form onSubmit={handleSubmit} className="space-y-0" style={{ border: "3px solid #000" }}>
-      {[
-        { label: "Name", type: "text", placeholder: "Your name" },
-        { label: "Email", type: "email", placeholder: "your@email.com" },
-        { label: "Organisation", type: "text", placeholder: "Company name" },
-      ].map((field, i) => (
-        <div key={i} style={{ borderBottom: "2px solid #000" }}>
-          <label className="block text-xs font-mono font-bold uppercase tracking-widest px-5 pt-4 pb-1 text-gray-500">
-            {field.label}
-          </label>
-          <input
-            type={field.type}
-            placeholder={field.placeholder}
-            required
-            className="w-full px-5 pb-4 pt-1 text-sm font-medium outline-none bg-white"
-            style={{ fontFamily: "inherit" }}
-          />
-        </div>
-      ))}
-      <div style={{ borderBottom: "2px solid #000" }}>
-        <label className="block text-xs font-mono font-bold uppercase tracking-widest px-5 pt-4 pb-1 text-gray-500">
-          Message
-        </label>
-        <textarea
-          placeholder="Describe the challenge or opportunity..."
-          required
-          rows={4}
-          className="w-full px-5 pb-4 pt-1 text-sm font-medium outline-none resize-none bg-white"
-          style={{ fontFamily: "inherit" }}
-        />
-      </div>
-      <button
-        type="submit"
-        className="w-full py-4 font-black uppercase text-sm tracking-widest"
-        style={{
-          background: "#000",
-          color: "#fff",
-          transition: "all 0.15s ease",
-        }}
-        onMouseEnter={(e) => {
-          (e.currentTarget as HTMLElement).style.background = "#FFCC00";
-          (e.currentTarget as HTMLElement).style.color = "#000";
-        }}
-        onMouseLeave={(e) => {
-          (e.currentTarget as HTMLElement).style.background = "#000";
-          (e.currentTarget as HTMLElement).style.color = "#fff";
-        }}
-      >
-        Send Message →
-      </button>
-    </form>
   );
 }

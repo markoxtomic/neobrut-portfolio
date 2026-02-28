@@ -89,6 +89,25 @@ export function CaseStudyOverlay({ project, onClose }: CaseStudyOverlayProps) {
                   </div>
                 ))}
               </div>
+              {project.links && project.links.length > 0 && (
+                <div className="mt-4 pt-4 border-t-2 border-black">
+                  <div className="text-[10px] font-mono font-bold uppercase tracking-widest mb-3 text-gray-500">Live Properties</div>
+                  <div className="flex flex-col gap-2">
+                    {project.links.map((link, i) => (
+                      <a
+                        key={i}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between bg-black text-white px-3 py-2 text-xs font-black uppercase tracking-wider hover:bg-[#FFCC00] hover:text-black transition-colors group"
+                      >
+                        {link.label}
+                        <span className="group-hover:translate-x-1 transition-transform ml-2">↗</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 
