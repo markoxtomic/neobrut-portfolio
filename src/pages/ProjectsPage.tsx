@@ -23,21 +23,6 @@ export function ProjectsPage({ onOpenCaseStudy }: ProjectsPageProps) {
           <p className="text-gray-400 max-w-xl text-sm leading-relaxed font-medium">
             A structured library of work spanning e-commerce infrastructure, machine learning systems, market expansion strategy, and digital operations leadership.
           </p>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-4 mt-10">
-            {[
-              { value: "10+", label: "Projects" },
-              { value: "5", label: "Domains" },
-              { value: "+18%", label: "Revenue Growth" },
-              { value: "+371%", label: "ROAS" },
-              { value: "4", label: "Team Built" },
-              { value: "12", label: "Data Sources" },
-            ].map((s, i) => (
-              <div key={i} className="text-center py-4" style={{ border: "1px solid #333" }}>
-                <div className="text-xl md:text-2xl font-black text-[#FFCC00]">{s.value}</div>
-                <div className="text-xs font-mono text-gray-500 mt-1 uppercase tracking-wider">{s.label}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 
@@ -98,6 +83,6 @@ export function ProjectsPage({ onOpenCaseStudy }: ProjectsPageProps) {
           })}
         </div>
       </div>
-    </div>
+    </div >
   );
 }

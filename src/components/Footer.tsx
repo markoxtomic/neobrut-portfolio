@@ -61,7 +61,7 @@ export function Footer({ onNavigate }: FooterProps) {
         {/* Bottom Bar */}
         <div className="py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
           <div className="text-xs font-mono text-gray-600 uppercase tracking-widest">
-            © {new Date().getFullYear()} MT — Head of Digital & Strategy
+            © {new Date().getFullYear()} MT - Head of Digital & Strategy
           </div>
           <div className="text-xs font-mono text-gray-600 uppercase tracking-widest">
             Built with structure. Executed with precision.

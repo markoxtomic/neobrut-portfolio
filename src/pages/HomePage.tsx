@@ -187,7 +187,7 @@ export function HomePage({ onOpenCaseStudy, onNavigate }: HomePageProps) {
               </div>
               <div className="p-6 md:p-10" style={{ border: "3px solid #FFCC00", background: "#111" }}>
                 <div className="flex flex-col md:flex-row md:items-center gap-4 mb-6">
-                  <span className="font-mono text-sm tracking-widest text-gray-400">2024 — Present</span>
+                  <span className="font-mono text-sm tracking-widest text-gray-400">2024 - Present</span>
                   <span className="text-[10px] font-bold px-2 py-0.5 rounded border border-[#FFCC00] text-[#FFCC00] uppercase tracking-wider">
                     Current
                   </span>
@@ -218,7 +218,7 @@ export function HomePage({ onOpenCaseStudy, onNavigate }: HomePageProps) {
             {/* Role 2: Digital Business & E-Com Manager */}
             <div className="md:pl-16 mb-16">
               <div className="p-6 md:p-10" style={{ border: "2px solid #333", background: "#111" }}>
-                <div className="font-mono text-sm tracking-widest text-gray-400 mb-6">2021 — 2024</div>
+                <div className="font-mono text-sm tracking-widest text-gray-400 mb-6">2021 - 2024</div>
 
                 <h3 className="text-3xl md:text-5xl font-black uppercase mb-2">Digital Business & E-Com Manager</h3>
                 <div className="text-[#FFCC00] font-bold mb-8 text-xl">Revisage GmbH</div>
@@ -242,7 +242,7 @@ export function HomePage({ onOpenCaseStudy, onNavigate }: HomePageProps) {
             {/* Role 3: Co-Founder */}
             <div className="md:pl-16">
               <div className="p-6 md:p-10" style={{ border: "2px solid #333", background: "#111" }}>
-                <div className="font-mono text-sm tracking-widest text-gray-400 mb-6">2018 — 2019</div>
+                <div className="font-mono text-sm tracking-widest text-gray-400 mb-6">2018 - 2019</div>
 
                 <h3 className="text-3xl md:text-5xl font-black uppercase mb-2">Co-Founder</h3>
                 <div className="text-[#FFCC00] font-bold mb-8 text-xl">Shopify Dropshipping Store "HaptIQ"</div>
@@ -421,15 +421,15 @@ function FAQAccordion() {
   const faqs = [
     {
       q: "What types of organisations do you work with?",
-      a: "Primarily growth-stage and mid-market businesses in e-commerce, DTC, and digital-first sectors. Companies that have proven product-market fit and are scaling — where strategic digital leadership creates compounding commercial impact.",
+      a: "Primarily growth-stage and mid-market businesses in e-commerce, DTC, and digital-first sectors. Companies that have proven product-market fit and are scaling - where strategic digital leadership creates compounding commercial impact.",
     },
     {
       q: "What does an advisory engagement look like?",
-      a: "Structured around business outcomes, not hours. Typically: monthly strategic review sessions, on-demand consultation, and oversight of specific digital programmes. Engagement depth is calibrated to the complexity of the challenge — from a focused project sprint to fractional Head of Digital arrangements.",
+      a: "Structured around business outcomes, not hours. Typically: monthly strategic review sessions, on-demand consultation, and oversight of specific digital programmes. Engagement depth is calibrated to the complexity of the challenge - from a focused project sprint to fractional Head of Digital arrangements.",
     },
     {
       q: "How is your approach different from a digital marketing agency?",
-      a: "Agencies execute within a defined brief. The advisory model operates at the strategic layer: defining what should be built, why, how it connects to revenue, and how it scales. Agency relationships are often managed as part of this — coordinating output toward a unified performance architecture.",
+      a: "Agencies execute within a defined brief. The advisory model operates at the strategic layer: defining what should be built, why, how it connects to revenue, and how it scales. Agency relationships are often managed as part of this - coordinating output toward a unified performance architecture.",
     },
     {
       q: "Can you lead technical projects without a full internal team?",
@@ -437,11 +437,11 @@ function FAQAccordion() {
     },
     {
       q: "What's your experience with AI implementation?",
-      a: "Practical, applied AI — not theoretical. Invoice processing automation, ML pricing models, Python BI with anomaly detection, and AI-assisted operational workflows. The focus is always on systems that create measurable business outcomes, not technology for its own sake.",
+      a: "Practical, applied AI - not theoretical (a little bit of both actually). Invoice processing automation, ML pricing models, Python BI with anomaly detection, and AI-assisted operational workflows. The focus is always on systems that create measurable business outcomes, not technology for its own sake.",
     },
     {
       q: "How quickly can you begin an engagement?",
-      a: "Typically 2–3 weeks from initial conversation to engagement start. A structured discovery call is the first step — understanding the business context, challenge, and opportunity before any engagement architecture is proposed.",
+      a: "Typically 2-3 weeks from initial conversation to engagement start. A structured discovery call is the first step - understanding the business context, challenge, and opportunity before any engagement architecture is proposed.",
     },
   ];
 

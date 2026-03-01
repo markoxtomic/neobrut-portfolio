@@ -155,9 +155,9 @@ export function CaseStudyOverlay({ project, onClose }: CaseStudyOverlayProps) {
                     <div className="w-8 h-8 bg-black text-white font-mono font-bold text-sm flex items-center justify-center flex-shrink-0">
                       {i + 1}
                     </div>
-                    <div className="font-black uppercase text-sm tracking-wide">{phase.title.split("—")[1]?.trim() || phase.title}</div>
+                    <div className="font-black uppercase text-sm tracking-wide">{phase.title.split("-")[1]?.trim() || phase.title}</div>
                   </div>
-                  <div className="text-xs font-mono font-bold uppercase tracking-widest text-gray-500 mb-2">{phase.title.split("—")[0]?.trim()}</div>
+                  <div className="text-xs font-mono font-bold uppercase tracking-widest text-gray-500 mb-2">{phase.title.split("-")[0]?.trim()}</div>
                   <p className="text-sm leading-relaxed">{phase.content}</p>
                 </div>
               ))}

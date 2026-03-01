@@ -1,4 +1,4 @@
-export type ProjectCategory =
+﻿export type ProjectCategory =
   | "E-Commerce Infrastructure"
   | "Machine Learning & Data"
   | "Market Expansion"
@@ -76,22 +76,22 @@ export const projects: Project[] = [
       ],
       strategicPhases: [
         {
-          title: "Phase 1 — Diagnosis",
+          title: "Phase 1 - Diagnosis",
           content:
             "Audited the limitations of the 2016 CMS and mapped a new taxonomy for 513 premium products (Marble, Granite, etc.).",
         },
         {
-          title: "Phase 2 — System Design",
+          title: "Phase 2 - System Design",
           content:
             "Designed a multi-lingual Shopify environment (4 languages) with integrated shipping and payment logic.",
         },
         {
-          title: "Phase 3 — Implementation",
+          title: "Phase 3 - Implementation",
           content:
             "Led the internal team on repetitive workflows while I personally handled the Shopify architecture, GTM tracking, and DNS migration.",
         },
         {
-          title: "Phase 4 — Launch & SEO",
+          title: "Phase 4 - Launch & SEO",
           content:
             "Currently executing the final pre-launch phase (T-minus 14 days as of February 2026) including a multi-lingual SEO blog strategy to support international entry.",
         },
@@ -121,7 +121,7 @@ export const projects: Project[] = [
         { label: "Markets at Launch", value: "4" },
       ],
       strategicImpact:
-        "This was a high-stakes project, I didn't want to pay thousands of euros for an agency to do this, so I decided to do it myself. I learned a lot during this project and I'm proud of what I accomplished. It was a lot of work and I did, what I do best - learning by doing - trial and error.",
+        "This was a high-stakes project, I didn't want to pay thousands of euros for an agency to do this, so I decided to do it myself. It was quite intense and I came up with the idea and planning completely by myself. Execution is, what matters most after all - glad I aced that as well. Went basically face first and did, what I do best: learning by doing, by trial and error. Good traits to have for this: problem-solving and staying calm under pressure.",
     },
   },
   {
@@ -144,7 +144,7 @@ export const projects: Project[] = [
         "Initially operating as a single-person dependency for all strategic digital initiatives, I successfully transitioned into a leadership role to architect and scale a high-performance digital function. By building a four-specialist team from the ground up, I eliminated key-person dependencies and shifted my focus to high-level financial strategy and global orchestration. I have successfully infused a 'continuous learning' culture into an established organization, implementing EU AI Act-compliant workflows that have measurably increased productivity and contributed to an 18% net revenue growth.",
       businessContext: [
         { label: "Industry", value: "Digital Commerce" },
-        { label: "Company Stage", value: "Growth – transitioning from a single-person digital dependency to a scalable team structure" },
+        { label: "Company Stage", value: "Growth - transitioning from a single-person digital dependency to a scalable team structure" },
         { label: "Core Challenge", value: "Lack of documented systems and scalability; high-key person risk on all digital operations" },
         { label: "Opportunity", value: "Build a lean, high-output team capable of executing complex growth initiatives under rigid budget constraints" },
       ],
@@ -186,7 +186,7 @@ export const projects: Project[] = [
         { label: "Operational Readiness", value: "90 Days" },
       ],
       strategicImpact:
-        "Growing a team from just myself to four specialists was a profound transition. I had to stop doing everything myself and start building systems for others to succeed. Successfully introducing a high-performance, 'fresh wind' mindset into a traditionally stagnant company structure has been my most rewarding leadership challenge, transforming the digital function into a permanent, scalable asset.",
+        "Growing a team from just myself to four specialists was a profound transition. Stopped doing everything myself and started building on top of my knowledge - a team that is young and eager to achieve bigger goals. This allowed me to focus more on strategy and execute the very difficult tasks, that most employees with my few years of experience generally couldn't manage. This is what I call 'engineering growth at scale'.",
     },
   },
   {
@@ -196,7 +196,7 @@ export const projects: Project[] = [
     summary:
       "Architected a high-velocity expansion strategy for France, Netherlands, and Benelux, integrating multilingual Shopify architecture with localized SEO and B2B partnership pipelines.",
     kpis: [
-      { label: "Rev Growth (Y1)", value: "+9–11%" },
+      { label: "Rev Growth (Y1)", value: "+9-11%" },
       { label: "Exec. Timeline", value: "3 Weeks" },
       { label: "Rev Growth (Y2)", value: "15%" },
       { label: "Initial Markets", value: "3 EU" },
@@ -246,14 +246,14 @@ export const projects: Project[] = [
         riskMitigation: "Established feedback loops to analyze per-country product performance, allowing for rapid storefront adaptations based on user behavior.",
       },
       outcomes: [
-        { label: "Projected Growth (Y1)", value: "+9–11%" },
+        { label: "Projected Growth (Y1)", value: "+9-11%" },
         { label: "Exec. Timeline", value: "21 Days" },
         { label: "Projected Growth (Y2)", value: "15%" },
         { label: "Target Regions", value: "FR, NL, Benelux" },
         { label: "Status", value: "Ongoing" },
       ],
       strategicImpact:
-        "This project demonstrates our ability to combine high-level market research with immediate, aggressive execution. By framing the expansion as both a B2C and B2B play, we are not just entering new territories but building a sustainable ecosystem for long-term growth across the EU.",
+        "This initiave proves my now Senior level understanding of market dynamics. Thankfully I've earned my right to autonomously plan and work overall, because of the trust in my abilities. My aim is to execute this within the whole company to kind of develop a growth mindset throughout all departments. Opening new markets can be a risky endeavor, especially when entering unprepared - I am sure my thorough research will guide us to enter as efficiently as possible. First steps will be to gain data to understand/interpret and then double down on what works.",
     },
     links: [
       { label: "Core Infrastructure (Shopify Project)", url: "/projects/shopify-store-building" }
@@ -286,22 +286,22 @@ export const projects: Project[] = [
       ],
       strategicPhases: [
         {
-          title: "The Forecast Engine — Technical Deep Dive",
+          title: "The Forecast Engine - Technical Deep Dive",
           content:
             "Implemented an Ensemble Modeling approach using Linear Regression & Exponential Smoothing for momentum, combined with Monte Carlo simulations to run thousands of 'what-if' scenarios against market volatility.",
         },
         {
-          title: "The Intelligence Layer — Future Roadmap",
+          title: "The Intelligence Layer - Future Roadmap",
           content:
             "Transitioning from visual dashboards to a Conversational AI Interface via Local Inference (7B-8B parameter LLMs). Implementing RAG (Retrieval-Augmented Generation) indexed against parsed invoice data.",
         },
         {
-          title: "Data Operations — High Speed Parsing",
+          title: "Data Operations - High Speed Parsing",
           content:
             "Engineered a high-speed backend capable of massive ingestion, successfully parsing 2,000 multi-format invoices in 86 seconds with structured output for modeling.",
         },
         {
-          title: "The Strategic Layer — Decision Engine",
+          title: "The Strategic Layer - Decision Engine",
           content:
             "Final output weights the Ensemble models into a definitive prognosis with a visible Confidence Percentage, allowing executives to allocate resources with structural confidence.",
         },
@@ -332,7 +332,7 @@ export const projects: Project[] = [
         { label: "Security Profile", value: "Zero-Trust" },
       ],
       strategicImpact:
-        "This project took a toll on me, but it was worth it. I learned a ton during building this and felt like a proper engineer. The learnings and data + prognosis helped my efforts in transforming our initiaves and further get us on track to reach revenue numbers never before.",
+        "This project took a toll on me, but it was worth it. I learned a ton during building this and felt like a proper engineer. The learnings and data + prognosis helped my efforts in transforming our initiaves and further get us on track to reach revenue numbers never had before.",
     },
   },
   {
@@ -383,7 +383,7 @@ export const projects: Project[] = [
       executionLeadership: {
         stakeholders: "Corporate Stakeholders, Content Specialists, IT Infrastructure Team",
         teamLeadership: "Acting as Lead Architect & AI Strategist, shifting manual drafting workflows into an AI-assisted verification model.",
-        timeline: "Active Strategic Roadmap — progressing from selection to departmental resource rollout.",
+        timeline: "Active Strategic Roadmap - progressing from selection to departmental resource rollout.",
         riskMitigation: "100% local deployment ensures zero data leakage, presenting a secure alternative to commercial SaaS solutions.",
       },
       outcomes: [
@@ -393,7 +393,7 @@ export const projects: Project[] = [
         { label: "System Security", value: "Air-Gapped" },
       ],
       strategicImpact:
-        "Solving the tension between AI speed and corporate privacy felt like finding a way to have our cake and eat it too. By architecting this 'internal agency,' I'm not just saving on API fees; I'm building a permanent asset that understands our brand DNA better than any third-party model ever could. It's about moving from being a consumer of AI to being an owner of highly specialized intelligence.",
+        "Fun project, but even more long-term value. Staying true to regulatory guidelines (AI Act), while being able to write content in our brand voice with many custom data points is a big win. I can imagine to widen this intelligence suite out to also handle sensitive data and it would still be local and secure. This is the future of AI in business (especially in the EU).",
     },
   },
   {
@@ -413,10 +413,10 @@ export const projects: Project[] = [
     type: "WORK",
     caseStudy: {
       executiveSummary:
-        "Identifying significant untapped potential in our existing ad spend, I spearheaded a strategic shift in our performance marketing function. I led the sourcing and onboarding of a specialized Google Ads agency—led by a former Google strategist—to replace fragmented, 'spooky' tracking with a robust, data-verified infrastructure. By acting as the Lead Strategist and Project Manager, I coordinated the deployment of advanced PMax and Shopping campaigns, resulting in a 371% increase in total ROAS and a 29% reduction in CPC, all while maintaining a consistent budget compared to previous years.",
+        "Identifying significant untapped potential in our existing ad spend, I spearheaded a strategic shift in our performance marketing function. I led the sourcing and onboarding of a specialized Google Ads agency-led by a former Google strategist-to replace fragmented, 'spooky' tracking with a robust, data-verified infrastructure. By acting as the Lead Strategist and Project Manager, I coordinated the deployment of advanced PMax and Shopping campaigns, resulting in a 371% increase in total ROAS and a 29% reduction in CPC, all while maintaining a consistent budget compared to previous years.",
       businessContext: [
         { label: "Industry", value: "DTC E-Commerce" },
-        { label: "Company Stage", value: "Growth — scaling paid acquisition through data-driven precision" },
+        { label: "Company Stage", value: "Growth - scaling paid acquisition through data-driven precision" },
         { label: "Core Challenge", value: "Declining ROAS and unreliable attribution prevented confident scaling of ad spend" },
         { label: "Opportunity", value: "Implement verified Google Ads tracking and expert retargeting to maximize efficiency of current budgets" },
       ],
@@ -459,7 +459,7 @@ export const projects: Project[] = [
         { label: "Ad Spend", value: "Stable" },
       ],
       strategicImpact:
-        "Transforming the marketing function from a cost center into a high-yield growth engine proved that growth is driven by efficiency and tracking strategy rather than simply increasing budget. The 1127% ROAS achievement on our primary PMax campaign stands as a testament to the power of clean data and expert agency coordination.",
+        "As an E-Commerce company, employees like me who are in charge, get bombarded with E-mails from agencies. I took the initiative on finding a possible partner, because my gathered data clearly indicated that our in house solution is not up to par with the potential. The results speak for themselves - ultimately the ad budget rose by like 4% and the ROI is tremendously enhanced. With the market expansion and new storefront, execution here will matter more than ever.",
     },
   },
   {
@@ -483,7 +483,7 @@ export const projects: Project[] = [
         "As Head of Digital, I identified a critical need for granular unit-economic visibility to protect margins during aggressive scaling. I architected a Python-native desktop suite that automates the ingestion of diverse supplier invoices and manages a comprehensive database of 1,153 products. By combining heavy keyword-based extraction logic with ML-driven pricing simulations, the tool provides real-time 'What-If' analysis, allowing the executive team to adjust pricing and marketing budgets based on algorithmically validated profit maximization.",
       businessContext: [
         { label: "Industry", value: "Procurement and Distribution for E-Com" },
-        { label: "Company Stage", value: "Growth — scaling margin intelligence" },
+        { label: "Company Stage", value: "Growth - scaling margin intelligence" },
         { label: "Core Challenge", value: "Manual management of 1,153 individual products led to reactive adjustments and margin erosion" },
         { label: "Opportunity", value: "Centralize data into local SQLite environment for instant SKU-level performance audits" },
       ],
@@ -535,7 +535,7 @@ export const projects: Project[] = [
         { label: "Strategic Visibility", value: "Real-Time" },
       ],
       strategicImpact:
-        "Building this system was a turning point for how we understood our own profitability. I remember the relief of finally seeing a real-time 'What-If' scenario for our most expensive products and realizing we could optimize margins by 8% just by shifting our ad spend strategy. It felt like finally having a GPS after years of driving by intuition.",
+        "Building this system was a turning point for how we understood our own profitability. I remember the relief of finally seeing a real-time 'What-If' scenario for our most expensive products and realizing we could optimize margins by 8% just by shifting our ad spend strategy. I never liked math in school, funnily enough - now, when understanding how complex algorithmic thinking can influence decisions, it turned out to be my best buddy.",
     },
   },
   {
@@ -555,10 +555,10 @@ export const projects: Project[] = [
     type: "WORK",
     caseStudy: {
       executiveSummary:
-        "To support the expansion of our brand beyond traditional e-commerce, I architected a modular React-based ecosystem for our service and informational web properties. By moving away from rigid templates to a high-performance stack (TypeScript, Vite, Tailwind), I enabled the rapid deployment of multiple domains—including specialized service sites like zimmerbrunnen-service.at. This transition reduced launch times by 83% and provided a seamless, informational layer to our digital footprint that complements our primary sales channels.",
+        "To support the expansion of our brand beyond traditional e-commerce, I architected a modular React-based ecosystem for our service and informational web properties. By moving away from rigid templates to a high-performance stack (TypeScript, Vite, Tailwind), I enabled the rapid deployment of multiple domains-including specialized service sites like zimmerbrunnen-service.at. This transition reduced launch times by 83% and provided a seamless, informational layer to our digital footprint that complements our primary sales channels.",
       businessContext: [
         { label: "Industry", value: "Digital Service & High-End Maintenance" },
-        { label: "Company Stage", value: "Growth — expanding into service-based revenue streams" },
+        { label: "Company Stage", value: "Growth - expanding into service-based revenue streams" },
         { label: "Core Challenge", value: "Legacy web creation was slow and lacked the performance needed for SEO-driven informational content" },
         { label: "Opportunity", value: "Build a reusable component library to launch high-performance, informational domains at scale" },
       ],
@@ -601,7 +601,7 @@ export const projects: Project[] = [
         { label: "Lighthouse Score", value: "90+" },
       ],
       strategicImpact:
-        "Building these informational and service-based sites removed the technical bottleneck for the company to test new markets and services beyond standard e-commerce. It transformed the frontend stack into an internal marketing accelerator, allowing us to ship at engineering quality without engineering overhead.",
+        "I like tough logical challenges, so frontend work generally is something to take my mind off things. However, sometimes it's also nice to build something aesthetically pleasing and shifting the focus on usability. With AI as a sparring partner, I can whip up a simple landing page within an hour, which is something I really enjoy. Also built villasofmakarska.com for a buddy of mine - my best site yet (based on design).",
     },
     links: [
       { label: "zimmerbrunnen-service.at", url: "https://zimmerbrunnen-service.at" },
@@ -674,7 +674,7 @@ export const projects: Project[] = [
         { label: "Management Overhead", value: "Reduced 75%" },
       ],
       strategicImpact:
-        "Migrating and consolidating four separate Magento stores at once felt like conducting an orchestra during an earthquake. I had to lead the dev agency through every sprint, ensuring the 4:1 consolidation didn't break our global presence. Personally architecting the navigation logic for multiple domains was a massive puzzle, but seeing all four storefronts go live from a single backend with zero downtime was a career-defining moment of relief.",
+        "The first bigger project of my career that involved managing stakeholders in critical roles. Our main revenue drivers are the storefronts - if execution was messed up here, we could have packed our bags, so I was relieved and proud of the great work done by everyone involved. I was simultaneously a stepping stone for me personally.",
     },
   },
 ];
